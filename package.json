@@ -1,6 +1,10 @@
 {
   "name": "ui-kit-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "19.4.0",
+    "npm": "9.2.0"
+  },
   "private": true,
   "dependencies": {
     "@amityco/ui-kit": "^2.0.1",
