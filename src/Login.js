@@ -9,9 +9,10 @@ export default function Login({ onSubmit = () => {} }) {
 
   return (
     <form className="Login" onSubmit={handleSubmit}>
+      <img src="../images/glic.png" alt="logo" width={250} height={250} />
       <h1>
-        Welcome to
-        <strong>Amity Social Cloud.</strong>
+        Bem vindo a
+        <strong>Glic Social</strong>
       </h1>
       <label>login</label>
       <input type="text" name="username" required />
