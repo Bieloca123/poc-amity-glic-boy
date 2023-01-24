@@ -5,26 +5,24 @@ import { AmityUiKitProvider, AmityUiKitSocial } from "@amityco/ui-kit";
 
 import Login from "./Login";
 
-const apiKey = "b3babb0b3a89f4341d31dc1a01091edcd70f8de7b23d697f";
+import AmityClient, { ApiRegion } from "@amityco/js-sdk";
+
+const apiKey = "b0efeb583a88f0614f33891a5b0a168884008eb4e9346e2b";
+
 
 export default function App() {
-  const [userId, setUserId] = useState();
-
   return (
     <div className="App">
-      {!userId ? (
-        <Login onSubmit={setUserId} />
-      ) : (
         <AmityUiKitProvider
-          key={userId}
+          key="123"
           apiKey={apiKey}
-          apiEndPoint="https://api.sg.amity.co"
-          userId={userId}
-          displayName={userId}
+          apiEndpoint="https://api.us.amity.co"
+          apiRegion="https://api.us.amity.co"
+          userId="123"
+          displayName="Jonathan"
         >
           <AmityUiKitSocial />
         </AmityUiKitProvider>
-      )}
     </div>
   );
 }
